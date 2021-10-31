@@ -1,5 +1,12 @@
+/**
+ * 项目的启动入口
+ */
+
+// 加载Vue
 import Vue from 'vue'
+// 加载跟组件
 import App from './App.vue'
+// 加载路由
 import router from './router'
 // 加载 element 组件库
 import ElementUI from 'element-ui'
@@ -20,4 +27,5 @@ Vue.config.productionTip = false
 new Vue({
   router,
   render: h => h(App)
+  // el: '#app' //等价于 $mount('#app')
 }).$mount('#app')
